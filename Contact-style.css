@@ -14,6 +14,7 @@ body {
     background-image: url("bgi-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 115svh;
   }
 }
 
@@ -68,10 +69,10 @@ body {
   align-items: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   #thread-logo {
     width: 400px;
-    margin-left: 20px;
+    
   }
 }
 
@@ -101,4 +102,5 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap");
+
 
