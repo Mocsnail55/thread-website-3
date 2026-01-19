@@ -6,6 +6,15 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #2f2f2f;
+  animation: fadeIn 2s;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("bgi-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .header-container {
@@ -29,12 +38,15 @@ body {
 .nav-header {
   cursor: pointer;
 }
+.nav-header:hover {
+  animation: hover 2s infinite alternate;
+  text-decoration: underline;
+  color: rgb(150, 150, 150);
+}
 
 .main-content {
   max-width: 900px;
   padding: 1.5rem;
-  animation-name: fadeIn;
-  animation-duration: 1.5s;
 }
 
 .main-content-container-2 {
@@ -45,8 +57,6 @@ body {
 .main-content-2 {
   max-width: 900px;
   padding: 1.5rem;
-  animation-name: fadeIn;
-  animation-duration: 1.5s;
 }
 
 .main-content-header-2 {
@@ -111,7 +121,11 @@ body {
   color: #555555;
   bottom: 0;
   align-items: center;
-  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 1024px) {
@@ -161,6 +175,15 @@ body {
   }
 }
 
+@keyframes hover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
 @media (max-width: 768px) {
   .footer-container {
     position: relative;
@@ -168,3 +191,5 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap");
+
+
