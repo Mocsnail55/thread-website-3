@@ -1,0 +1,170 @@
+body {
+  background-image: url("bgi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2f2f2f;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  height: 300px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  user-select: none;
+}
+
+.nav-header {
+  cursor: pointer;
+}
+
+.main-content {
+  max-width: 900px;
+  padding: 1.5rem;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.main-content-container-2 {
+  display: flex;
+  justify-content: end;
+}
+
+.main-content-2 {
+  max-width: 900px;
+  padding: 1.5rem;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.main-content-header-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 1rem;
+}
+
+.h2-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.h2-icon-2 {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.content-with-image {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 2000px;
+}
+
+.content-with-image.reverse {
+  flex-direction: row-reverse;
+}
+
+.side-image {
+  margin-left: auto;
+  padding-right: 8rem;
+  width: 700px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .content-with-image,
+  .content-with-image.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .side-image {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  user-select: none;
+  font-size: 0.9rem;
+  color: #555555;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .side-image {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .side-image {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  #thread-logo {
+    width: 400px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 425px) {
+  .main-content-container {
+    flex-direction: column;
+  }
+  .main-content-container-2 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .main-content-container {
+    flex-direction: column;
+  }
+  .main-content-container-2 {
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    position: relative;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap");
